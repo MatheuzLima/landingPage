@@ -21,8 +21,8 @@ All colors MUST be HSL.
     --primary: 45 96% 50%; /* #fbbc04 - amarelo-dourado */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 14 86% 46%; /* #d84315 - vermelho suave */
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 4 86% 46%; /* #d84315 - vermelho suave  cor do botao que pisca no mockup */
+    --secondary-foreground: 0 0% 100%; 
 
     --muted: 0 0% 100% / 0.1;
     --muted-foreground: 180 100% 94%;
@@ -98,11 +98,19 @@ All colors MUST be HSL.
 @layer base {
   * {
     @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
   }
 
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -133,6 +141,57 @@ All colors MUST be HSL.
   
   .price-highlight {
     @apply text-primary text-4xl font-bold;
+  }
+
+  /* Garantir que containers não causem overflow */
+  .container {
+    @apply w-full max-w-full px-4;
+  }
+
+  /* Responsividade para imagens */
+  img {
+    @apply max-w-full h-auto;
+  }
+
+  /* Melhorias para mobile */
+  @media (max-width: 640px) {
+    .container {
+      @apply px-4;
+    }
+    
+    .card-glass {
+      @apply p-4;
+    }
+    
+    .btn-primary {
+      @apply w-full text-base px-6 py-4;
+    }
+    
+    .price-highlight {
+      @apply text-3xl;
+    }
+  }
+
+  /* Centralização forçada para elementos importantes */
+  .mobile-center {
+    @apply text-center sm:text-left;
+  }
+  
+  .mobile-full-width {
+    @apply w-full sm:w-auto;
+  }
+
+  /* Configurações específicas para HeroSection */
+  .hero-container {
+    @apply w-full max-w-full;
+  }
+
+  .hero-image-container {
+    @apply flex justify-center items-center;
+  }
+
+  .hero-badge {
+    @apply absolute z-10;
   }
 }
 

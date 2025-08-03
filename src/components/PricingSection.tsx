@@ -19,7 +19,7 @@ export function PricingSection() {
         </div>
         
         <div className="max-w-2xl mx-auto">
-          <div className="card-glass p-8 md:p-12 text-center border-2 border-primary/50 fade-up">
+          <div className="card-glass p-6 lg:p-8 md:p-12 text-center border-2 border-primary/50 fade-up">
             <div className="mb-8">
               <div className="bg-secondary text-secondary-foreground px-4 py-2 rounded-full inline-block mb-4 font-bold">
                 🔥 OFERTA LIMITADA
@@ -29,7 +29,7 @@ export function PricingSection() {
               
               <div className="mb-6">
                 <p className="text-lg text-muted-foreground mb-2">De <span className="line-through">R$ 97,00</span> por apenas:</p>
-                <p className="price-highlight text-6xl">R$ 29,90</p>
+                <p className="price-highlight text-5xl lg:text-6xl">R$ 29,90</p>
                 <p className="text-sm text-muted-foreground">pagamento único</p>
               </div>
             </div>
@@ -55,7 +55,7 @@ export function PricingSection() {
             
             <Button 
               onClick={handleBuyClick}
-              className="btn-primary w-full text-xl py-6 mb-6"
+              className="btn-primary w-full text-lg lg:text-xl py-6 mb-6"
             >
               QUERO COMEÇAR AGORA - R$ 29,90
             </Button>

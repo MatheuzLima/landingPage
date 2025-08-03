@@ -32,11 +32,11 @@ export function TestimonialsSection() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="card-glass p-8 hover:scale-105 transition-transform duration-300 fade-up"
+              className="card-glass p-6 lg:p-8 hover:scale-105 transition-transform duration-300 fade-up"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="flex items-center mb-6">
@@ -51,7 +51,7 @@ export function TestimonialsSection() {
                 "{testimonial.text}"
               </blockquote>
               
-              <div className="flex text-primary text-xl mt-4">
+              <div className="flex text-primary text-xl mt-4 justify-center lg:justify-start">
                 ⭐⭐⭐⭐⭐
               </div>
             </div>

@@ -3,7 +3,7 @@ export function GuaranteeSection() {
     <section className="py-20 px-4" id="garantia">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="card-glass p-8 md:p-12 fade-up">
+          <div className="card-glass p-6 lg:p-8 md:p-12 fade-up">
             <div className="text-6xl mb-6">🛡️</div>
             
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -14,7 +14,7 @@ export function GuaranteeSection() {
               Experimente o Guia Emagreça Comendo sem riscos
             </p>
             
-            <div className="bg-primary/20 p-8 rounded-lg mb-8">
+            <div className="bg-primary/20 p-6 lg:p-8 rounded-lg mb-8">
               <h3 className="text-2xl font-bold mb-4">Como funciona nossa garantia:</h3>
               <div className="space-y-4 text-left max-w-2xl mx-auto">
                 <p className="flex items-start gap-3">

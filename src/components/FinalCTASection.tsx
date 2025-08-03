@@ -19,14 +19,14 @@ export function FinalCTASection() {
             para emagrecer com prazer, sem dietas restritivas e de forma sustentável.
           </p>
           
-          <div className="bg-card/90 backdrop-blur-md p-8 rounded-2xl border border-border/50 mb-8 max-w-2xl mx-auto">
+          <div className="bg-card/90 backdrop-blur-md p-6 lg:p-8 rounded-2xl border border-border/50 mb-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">Último chamado!</h3>
-            <p className="price-highlight text-5xl mb-4">R$ 29,90</p>
+            <p className="price-highlight text-4xl lg:text-5xl mb-4">R$ 29,90</p>
             <p className="text-lg mb-6">Acesso vitalício + 2 bônus exclusivos</p>
             
             <Button 
               onClick={handleBuyClick}
-              className="btn-primary text-xl px-12 py-6 mb-4"
+              className="btn-primary text-lg lg:text-xl px-8 lg:px-12 py-6 mb-4 w-full sm:w-auto"
             >
               SIM, QUERO COMEÇAR AGORA!
             </Button>

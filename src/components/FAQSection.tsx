@@ -57,16 +57,16 @@ export function FAQSection() {
               <Button
                 variant="ghost"
                 onClick={() => toggleFAQ(index)}
-                className="w-full p-6 text-left justify-between hover:bg-primary/10"
+                className="w-full p-4 lg:p-6 text-left justify-between hover:bg-primary/10"
               >
-                <span className="text-lg font-semibold">{faq.question}</span>
+                <span className="text-base lg:text-lg font-semibold">{faq.question}</span>
                 <span className="text-2xl text-primary">
                   {openFAQ === index ? '−' : '+'}
                 </span>
               </Button>
               
               {openFAQ === index && (
-                <div className="px-6 pb-6">
+                <div className="px-4 lg:px-6 pb-4 lg:pb-6">
                   <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
                 </div>
               )}

@@ -44,11 +44,11 @@ export function IncludesSection() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {includes.map((item, index) => (
             <div 
               key={index}
-              className="card-glass p-8 text-center hover:scale-105 transition-transform duration-300 fade-up"
+              className="card-glass p-6 lg:p-8 text-center hover:scale-105 transition-transform duration-300 fade-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="text-4xl mb-4">{item.icon}</div>
@@ -59,7 +59,7 @@ export function IncludesSection() {
         </div>
         
         <div className="text-center mt-16">
-          <div className="card-glass p-8 max-w-2xl mx-auto fade-up" style={{ animationDelay: '0.6s' }}>
+          <div className="card-glass p-6 lg:p-8 max-w-2xl mx-auto fade-up" style={{ animationDelay: '0.6s' }}>
             <h3 className="text-2xl font-bold mb-4">Foca explicações simples e práticas sobre:</h3>
             <div className="grid sm:grid-cols-2 gap-4 text-left">
               <div>
