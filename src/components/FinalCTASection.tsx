@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 export function FinalCTASection() {
   const handleBuyClick = () => {
     // Integração com gateway de pagamento
-    window.open('https://pay.kiwify.com.br/seu-link-de-pagamento', '_blank');
+    window.open('https://pay.cakto.com.br/3cfa36q_354700', '_blank');
   };
 
   return (

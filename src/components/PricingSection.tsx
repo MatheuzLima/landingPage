@@ -57,7 +57,7 @@ export function PricingSection() {
               onClick={handleBuyClick}
               className="btn-primary w-full text-lg lg:text-xl py-6 mb-6"
             >
-              QUERO COMEÇAR AGORA - R$ 29,90
+              QUERO COMEÇAR AGORA!
             </Button>
             
             <div className="text-sm text-muted-foreground space-y-2">
