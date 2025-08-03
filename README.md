@@ -37,12 +37,11 @@ npm run dev
 
 ---
 
-## 🌍 Deploy com Netlify
+## 🌍 Deploy
 
-O projeto está hospedado na [Netlify](https://www.netlify.com/).
+O projeto está configurado para deploy em várias plataformas:
 
-### Para publicar ou atualizar:
-
+### Netlify
 1. Faça login em [netlify.com](https://netlify.com)
 2. Clique em **"Add new site"** > **"Import an existing project"**
 3. Conecte seu repositório do GitHub
@@ -51,7 +50,17 @@ O projeto está hospedado na [Netlify](https://www.netlify.com/).
    - **Publish directory:** `dist`
 5. Clique em **"Deploy site"**
 
-Após o deploy, a Netlify fornecerá um link temporário (ex: `https://seusite.netlify.app`) que pode ser substituído por um domínio personalizado.
+### Vercel
+1. Faça login em [vercel.com](https://vercel.com)
+2. Clique em **"New Project"**
+3. Conecte seu repositório do GitHub
+4. O projeto será detectado automaticamente como Vite
+5. Clique em **"Deploy"**
+
+### Outras plataformas
+- **Build command:** `npm run build`
+- **Publish directory:** `dist`
+- **Node version:** 18.x ou superior
 
 ---
 
@@ -65,6 +74,23 @@ Para usar seu próprio domínio:
 4. Após a propagação, o projeto estará acessível no novo domínio
 
 ---
+
+## 🔧 Troubleshooting
+
+### Problemas comuns de build:
+
+1. **Erro de binding nativo**: 
+   - Execute `npm run clean` antes do build
+   - Verifique se está usando Node.js 18+ 
+   - Reinstale as dependências: `rm -rf node_modules && npm install`
+
+2. **Erro de TypeScript**:
+   - Execute `npm run lint` para verificar erros
+   - Verifique se todos os arquivos estão importados corretamente
+
+3. **Erro de deploy**:
+   - Certifique-se de que o `dist/` está sendo gerado
+   - Verifique se o comando de build está correto na plataforma
 
 ## ✏️ Edição e contribuição
 

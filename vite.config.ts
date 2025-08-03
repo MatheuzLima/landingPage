@@ -16,4 +16,13 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    target: "es2015",
+    outDir: "dist",
+    sourcemap: false,
+    minify: "esbuild",
+  },
+  optimizeDeps: {
+    include: ["react", "react-dom"],
+  },
 }));
