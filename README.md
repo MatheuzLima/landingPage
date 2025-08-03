@@ -1,5 +1,5 @@
 
-# Emagreça com Estilo
+# Landing Page - "Emagreça com Estilo"
 
 Repositório do projeto **Emagreça com Estilo**, uma aplicação web desenvolvida em React com Vite e Tailwind CSS. O protótipo inicial foi gerado por IA, e desde então o desenvolvimento e manutenção do projeto são feitos por mim.
 
