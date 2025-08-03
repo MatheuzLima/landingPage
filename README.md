@@ -1,73 +1,78 @@
-# Welcome to your Lovable project
 
-## Project info
+# Emagreça com Estilo
 
-**URL**: https://lovable.dev/projects/165aa7d8-fc29-48ae-940f-63aa5ed76612
+Repositório do projeto **Emagreça com Estilo**, uma aplicação web desenvolvida em React com Vite e Tailwind CSS. O protótipo inicial foi gerado por IA, e desde então o desenvolvimento e manutenção do projeto são feitos por mim.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Tecnologias utilizadas
 
-**Use Lovable**
+- [React](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/165aa7d8-fc29-48ae-940f-63aa5ed76612) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Como rodar o projeto localmente
 
-**Use your preferred IDE**
+Certifique-se de ter o [Node.js](https://nodejs.org/) e o [npm](https://www.npmjs.com/) instalados. Recomenda-se o uso do [nvm](https://github.com/nvm-sh/nvm) para gerenciar versões do Node.js.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Passos:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+```bash
+# 1. Clone o repositório
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 2. Acesse a pasta do projeto
+cd <nome-do-projeto>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3. Instale as dependências
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Inicie o servidor de desenvolvimento
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🌍 Deploy com Netlify
 
-**Use GitHub Codespaces**
+O projeto está hospedado na [Netlify](https://www.netlify.com/).
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Para publicar ou atualizar:
 
-## What technologies are used for this project?
+1. Faça login em [netlify.com](https://netlify.com)
+2. Clique em **"Add new site"** > **"Import an existing project"**
+3. Conecte seu repositório do GitHub
+4. Configure:
+   - **Build command:** `npm run build`
+   - **Publish directory:** `dist`
+5. Clique em **"Deploy site"**
 
-This project is built with:
+Após o deploy, a Netlify fornecerá um link temporário (ex: `https://seusite.netlify.app`) que pode ser substituído por um domínio personalizado.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 🌐 Domínio personalizado
 
-Simply open [Lovable](https://lovable.dev/projects/165aa7d8-fc29-48ae-940f-63aa5ed76612) and click on Share -> Publish.
+Para usar seu próprio domínio:
 
-## Can I connect a custom domain to my Lovable project?
+1. No painel da Netlify, vá em **"Domain settings"**
+2. Clique em **"Add custom domain"**
+3. Adicione seu domínio e atualize os registros DNS no provedor
+4. Após a propagação, o projeto estará acessível no novo domínio
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## ✏️ Edição e contribuição
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Você pode editar os arquivos diretamente no seu ambiente local ou via GitHub:
+
+- Edite normalmente e envie os commits com `git push`
+- Use GitHub Codespaces para editar direto no navegador, se preferir
+
+---
+
+Projeto livre.
