@@ -27,7 +27,7 @@ export function GuaranteeSection() {
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-primary font-bold">3.</span>
-                  Se não ficar satisfeita, devolvemos 100% do seu dinheiro
+                  Se não ficar satisfeito, devolvemos 100% do seu dinheiro
                 </p>
               </div>
             </div>

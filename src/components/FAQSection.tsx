@@ -6,7 +6,7 @@ export function FAQSection() {
 
   const faqs = [
     {
-      question: "O que você vai Receber (começando do 0° módulo) FÍSICA",
+      question: "O que você vai Receber?",
       answer: "Você receberá o guia completo em formato digital (PDF), com acesso imediato após a confirmação do pagamento. O guia contém estratégias práticas, receitas e um plano alimentar sustentável."
     },
     {
